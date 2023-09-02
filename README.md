@@ -4,7 +4,8 @@
 Local `chdb` library and wheel builder for developers
 
 #### Audience
-[chdb](https://chdb.io) is automatically built and distributed for end-users. If you're a developer and need to build chdb locally, this is for you. 
+[chdb](https://chdb.io) is automatically built and distributed for end-users.<br>
+If you're a developer and need to build chdb locally, this is for you. 
 
 ### Features
 - builds latest chdb from git
