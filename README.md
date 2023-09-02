@@ -8,6 +8,8 @@ Experimental chdb docker builder
 - Work in progress
 
 ### Usage
+Run the included script to download, build and link a `chdb` python wheel
+
 ```
 ./build.sh
 ```
