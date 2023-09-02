@@ -7,7 +7,7 @@ echo "Locate chdb sources... "
 [ ! -d "/chdb" ] && git clone https://github.com/chdb-io/chdb /chdb
 
 echo "Updating submodules... "
-cd /chdb && git pull && git submodule update --init --recursive --jobs 4
+cd /chdb && git pull && git submodule update --init --recursive --multiple --jobs 0
 
 echo "Building chdb... "
 cd /chdb && bash ./chdb/build.sh
