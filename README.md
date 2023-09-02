@@ -3,9 +3,10 @@
 # chdb-builder
 Experimental chdb docker builder
 
-### Status
-
-- Work in progress
+#### Features
+- builds latest chdb from git
+- all dependencies included
+- ccache for fast rebuilds
 
 ### Usage
 Run the included script to download, build and link a `chdb` python wheel
