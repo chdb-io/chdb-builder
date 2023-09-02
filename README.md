@@ -3,6 +3,11 @@
 # chdb-builder
 Experimental chdb docker builder
 
+### Status
+
+- Work in progress
+
+### Usage
 ```
 ./build.sh
 ```
