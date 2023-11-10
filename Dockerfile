@@ -3,16 +3,16 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && apt install -y build-essential wget curl python3-minimal python3-pip python3-dev lsb-release software-properties-common gnupg
 RUN wget https://apt.llvm.org/llvm.sh \
     && chmod +x llvm.sh \
-    && ./llvm.sh 15 \
-    && which clang++-15 \
-    && clang++-15 --version \
+    && ./llvm.sh 17 \
+    && which clang++-17 \
+    && clang++-17 --version \
     && apt-get install -y make cmake ccache ninja-build yasm gawk wget \
     && ccache -s \
     && add-apt-repository ppa:git-core/ppa -y \
     && apt-get update \
     && apt-get install -y git \
-    && ln -s /usr/bin/clang-15 /usr/bin/clang \
-    && ln -s /usr/bin/clang++-15 /usr/bin/clang++ \
+    && ln -s /usr/bin/clang-17 /usr/bin/clang \
+    && ln -s /usr/bin/clang++-17 /usr/bin/clang++ \
     && which clang++ \
     && clang++ --version \
     && python3 -m pip install -U pip tox pybind11 twine setuptools wheel \
